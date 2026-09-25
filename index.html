@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gregorius Wilbert Gunawan — Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#top" class="navbar__brand">nama<span class="dot">.</span>dev</a>
+    <button class="navbar__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navMenu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <nav class="navbar__menu" id="navMenu">
+      <a href="#top" class="nav-link">Beranda</a>
+      <a href="#riwayat" class="nav-link">Riwayat</a>
+      <a href="#proyek" class="nav-link">Proyek</a>
+      <a href="#kontak" class="nav-link">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero__inner">
+    <div class="hero__text">
+      <p class="hero__eyebrow"> Mahasiswa Informatika — UNTAR</p>
+      <h1 class="hero__title">Halo,saya<br><span class="hero__name">Gregorius Wilbert Gunawan</span></h1>
+      <p class="hero__desc">NIM 535230212. Fokus di Backend, Struktur data, Aljabar linear &amp; Matematika diskrit.</p>
+      <div class="hero__actions">
+        <a href="#proyek" class="btn btn--primary">Lihat Proyek</a>
+        <a href="#kontak" class="btn btn--ghost">Kontak</a>
+      </div>
+    </div>
+    <div class="hero__visual" aria-hidden="true">
+      <div class="code-window">
+        <div class="code-window__bar">
+          <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+          <span class="code-window__title">profile.js</span>
+        </div>
+        <pre class="code-window__body"><code><span class="tk-kw">const</span> <span class="tk-var">mhs</span> = {
+  <span class="tk-key">Nama</span>: <span class="tk-str">"Gregorius Wilbert Gunawan"</span>,
+  <span class="tk-key">Nim</span>: <span class="tk-str">"535230212"</span>,
+  <span class="tk-key">Kampus</span>: <span class="tk-str">"UNTAR"</span>
+};</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="riwayat">
+  <div class="section__inner">
+    <h2 class="section__title">Pendidikan &amp; Organisasi</h2>
+    <ol class="timeline">
+      <li class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__period">2011–2017</span>
+          <h3 class="timeline__title">SD BUDI MULIA BOGOR</h3>
+        </div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__period">2017–2020</span>
+          <h3 class="timeline__title">SMP BUDI MULIA BOGOR</h3>
+        </div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__period">2020–2023</span>
+          <h3 class="timeline__title">SMA BUDI MULIA JAKARTA</h3>
+        </div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__period">2023–Sekarang</span>
+          <h3 class="timeline__title">S1 Informatika, Universitas Tarumanagara</h3>
+        </div>
+      </li>
+      <li class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <span class="timeline__period">2021–2022</span>
+          <h3 class="timeline__title">Anggota OSIS SMA Budi Mulia Jakarta <em></em></h3>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section--alt" id="proyek">
+  <div class="section__inner">
+    <h2 class="section__title">Proyek</h2>
+    <div class="projects">
+
+      <article class="project-card">
+        <div class="project-card__bar">
+          <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+          <span class="project-card__title">backend-api.js</span>
+        </div>
+        <div class="project-card__body">
+          <h3 class="project-card__name">Backend REST API</h3>
+          <p class="project-card__desc">CRUD data + autentikasi. Tugas mata kuliah Backend.</p>
+          <ul class="project-card__tags"><li>Node.js</li><li>Express</li><li>MongoDB</li></ul>
+          <a href="#" class="link-arrow">Kode sumber</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__bar">
+          <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+          <span class="project-card__title">matrix_solver.py</span>
+        </div>
+        <div class="project-card__body">
+          <h3 class="project-card__name">Kalkulator Aljabar Linear</h3>
+          <p class="project-card__desc">Operasi matriks & SPL. Tugas Aljabar Linear & Matdis.</p>
+          <ul class="project-card__tags"><li>Python</li><li>NumPy</li></ul>
+          <a href="#" class="link-arrow">Kode sumber</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__bar">
+          <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+          <span class="project-card__title">struktur_data.cpp</span>
+        </div>
+        <div class="project-card__body">
+          <h3 class="project-card__name">Implementasi Struktur Data</h3>
+          <p class="project-card__desc">Linked list, stack, queue, tree. Tugas Struktur Data.</p>
+          <ul class="project-card__tags"><li>C++</li><li>OOP</li></ul>
+          <a href="#" class="link-arrow">Kode sumber</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="kontak">
+  <div class="footer__inner">
+    <div>
+      <h2 class="footer__name">Nama Lengkap Anda</h2>
+      <p class="footer__nim">NIM 535230212 — Informatika, Universitas Tarumanagara</p>
+    </div>
+    <div class="footer__links">
+      <a href="mailto:nama@email.com">wiselgunawan@gmail.com</a>
+      <a href="https://github.com/username" target="_blank" rel="noopener">github:gregoriuswilbert</a>
+      <a href="https://linkedin.com/in/username" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <p class="footer__bottom">&copy; 2026 Gregorius Wilbert Gunawan</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
